@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateEmail(email) {
+
+      patt = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+.[A-Za-z0-9]+$/;
+
+
+        if(patt.test(email)){
+            alert("true")
+        }else{
+            alert("false")
+        }
+
+    }
+
+    var email = prompt("Nhap email");
+    var result = validateEmail(email);
+    console.log(result);
+</script>
+</body>
+</html>
